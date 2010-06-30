@@ -1,5 +1,5 @@
 import com.google.common.base.Preconditions;
-class BootStrap {
+class PreconditionsBootStrap {
  def grailsApplication
 
   def init = { servletContext ->
