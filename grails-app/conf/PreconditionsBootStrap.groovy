@@ -6,10 +6,7 @@ class PreconditionsBootStrap {
 		Preconditions.checkArgument(condition, message)     		
 	}
 	def init = { servletContext ->
-		grailsApplication.controllerClasses.each{ controllerClass ->
-			controllerClass.metaClass.checkArgument=genericCheckArgument 
-		}
-		grailsApplication.serviceClasses.each{ controllerClass ->
+		(grailsApplication.controllerClasses + grailsApplication.serviceClasses).each{ controllerClass ->
 			controllerClass.metaClass.checkArgument=genericCheckArgument 
 		}
 	}

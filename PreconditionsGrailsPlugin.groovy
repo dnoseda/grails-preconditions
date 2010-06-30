@@ -1,6 +1,6 @@
 class PreconditionsGrailsPlugin {
     // the plugin version
-    def version = "0.2"
+    def version = "0.3"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.2 > *"
     // the other plugins this plugin depends on
@@ -11,11 +11,11 @@ class PreconditionsGrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def author = "Your name"
-    def authorEmail = ""
-    def title = "Plugin summary/headline"
+    def author = "Damian Noseda"
+    def authorEmail = "dnoseda@gmail.com"
+    def title = "Google Preconditions in Grails"
     def description = '''\\
-Brief description of the plugin.
+Inject method checkArgument of Google Preconditions in controllers and services
 '''
 
     // URL to the plugin's documentation
