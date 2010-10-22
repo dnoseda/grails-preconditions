@@ -1,9 +1,10 @@
-import com.google.common.base.Preconditions;
 class PreconditionsBootStrap {
 	def grailsApplication
 	def genericCheckArgument = { conditionObject, message ->
 		boolean condition = conditionObject ? true: false
-		Preconditions.checkArgument(condition, message)     		
+		if(!condition){
+			throw new IllegalArgumentException( messag)
+		}     		
 	}
 	def init = { servletContext ->
 		grailsApplication.controllerClasses.each{ controllerClass ->
