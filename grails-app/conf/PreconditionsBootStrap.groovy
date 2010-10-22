@@ -3,7 +3,7 @@ class PreconditionsBootStrap {
 	def genericCheckArgument = { conditionObject, message ->
 		boolean condition = conditionObject ? true: false
 		if(!condition){
-			throw new IllegalArgumentException( messag)
+			throw new IllegalArgumentException( message)
 		}     		
 	}
 	def init = { servletContext ->
