@@ -1,4 +1,4 @@
-<plugin name='preconditions' version='0.4' grailsVersion='1.3.2 &gt; *'>
+<plugin name='preconditions' version='0.6' grailsVersion='1.3.2 &gt; *'>
   <author>Damian Noseda</author>
   <authorEmail>dnoseda@gmail.com</authorEmail>
   <title>Google Preconditions in Grails</title>
